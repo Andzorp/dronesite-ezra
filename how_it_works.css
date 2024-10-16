@@ -1,0 +1,99 @@
+/* How It Works Section */
+.how-it-works {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 3em;
+    color: #228B22;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase; /* Modern uppercase styling */
+    letter-spacing: 2px; /* Add letter spacing for a modern feel */
+    position: relative;
+    display: inline-block;
+    animation: fadeInDown 1s ease forwards; /* Fade-in animation */
+}
+
+/* Add a subtle line under the heading */
+.how-it-works h2::after {
+    content: '';
+    width: 200px;
+    height: 4px;
+    background-color: #228B22;
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in animation for heading */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-section h2 {
+        font-size: 2.2em;
+    }
+
+    .intro-section p {
+        font-size: 1.1em;
+    }
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.step {
+    width: 250px;
+    text-align: center;
+}
+
+/* Solutions and How It Works Icons */
+.how-it-works .step i {
+    font-size: 2.5em;
+    color: #228B22;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.how-it-works .step i:hover {
+    color: #006400; /* Darker green on hover */
+}
+
+
+.step h3 {
+    font-size: 1.5em;
+    color: #006400;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1em;
+    color: #555;
+}

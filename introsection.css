@@ -1,0 +1,78 @@
+/* Introduction Section with Gradient Background */
+.intro-section {
+    background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-section h2 {
+    font-size: 3em;
+    color: #228B22;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase; /* Modern uppercase styling */
+    letter-spacing: 2px; /* Add letter spacing for a modern feel */
+    position: relative;
+    display: inline-block;
+    animation: fadeInDown 1s ease forwards; /* Fade-in animation */
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555; /* Softer color for readability */
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-weight: 400;
+    animation: fadeIn 1.5s ease forwards; /* Fade-in animation for paragraph */
+}
+
+/* Add a subtle line under the heading */
+.intro-section h2::after {
+    content: '';
+    width: 200px;
+    height: 4px;
+    background-color: #228B22;
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in animation for heading */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-section h2 {
+        font-size: 2.2em;
+    }
+
+    .intro-section p {
+        font-size: 1.1em;
+    }
+}
