@@ -49,6 +49,11 @@
     transform-style: preserve-3d; /* Maintain 3D space */
 }
 
+/* Use the 'is-flipped' class to trigger the flip on click */
+.is-flipped {
+    transform: rotateY(180deg);
+}
+
 /* Flip the card on hover */
 .card:hover .card-inner {
     transform: rotateY(180deg); /* Rotate the card to show the back */
