@@ -1,7 +1,7 @@
 /* Drone Cards Section */
 .drone-cards {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 10px;
     background-color: #f9f9f9;
 }
 
@@ -28,14 +28,16 @@
 
 .cards-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between; /* Distribute cards evenly with space between */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    gap: 10px; /* Adjust gap between cards */
+    max-width: 100%; /* Ensure the container uses the full width */
+    padding: 0 10px; /* Add some horizontal padding */
 }
 
 /* Card Container */
 .card {
-    width: 300px;
+    width: 16%;
     height: 400px;
     perspective: 1000px; /* Enable 3D effect for flipping */
     position: relative;
